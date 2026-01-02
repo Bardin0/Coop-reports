@@ -1,0 +1,146 @@
+* { 
+    --article-link-color: #acacad;
+    --article-text-color: #fff; 
+    --header-link-color: #acacad;
+    --header-link-hover: #909091;
+    --footer-text: #acacad;
+    --primary-background: #191a1c;
+    --inline-link: #dbdad5;
+}
+html, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: var(--bs-font-sans-serif);
+    background: var(--primary-background);
+    height: 100%;
+    width: 100%;
+}
+
+article {
+    max-width: 1200px;
+    padding: 12px;
+    margin: 24px;
+    font-size: 20px;
+}
+
+.article-title{
+    padding: 4px;
+    margin: 0 20px 0 20px;
+}
+
+.article-header {
+    text-align: center;
+    margin: 24px 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-border {
+    width: 0%;
+    top:0;
+    height: 4px;
+    border-bottom: 1px solid var(--header-link-hover);
+    transition: width 0.3s ease;
+}
+
+.bottom-border.active{
+    width: 75%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.inline-link {
+    text-decoration: underline;
+    color: var(--inline-link);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    margin: 4px;
+    margin-bottom: 20px;
+}
+
+.header-link {
+    color: var(--header-link-color);
+    padding: 8px;
+}
+
+.header-link:hover{
+    color: var(--header-link-hover); 
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+#main-header{
+    padding: 8px;
+}
+
+.article-links {
+    list-style-type: none;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+footer * {
+    color: var(--footer-text);
+}
+
+.indent{
+    text-indent: 2em each-line;
+}
+
+.sub-section{
+    margin: 30px 0;
+    text-indent: 1em;
+}
+
+.article-image{
+    display: block;
+    max-height: 600px;
+    max-width: 900px;
+    cursor: pointer;
+}
+
+.active-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.img-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-alt-text{
+    color: var(--footer-text);
+    font-size: 14px;
+    margin-top: 8px;
+}
