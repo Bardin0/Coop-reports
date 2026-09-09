@@ -176,3 +176,10 @@ footer * {
     grid-column: 2 / span 2;
 }
 
+.h-link {
+  padding: 9px;
+}
+
+.h-link:hover {
+  color: #7396db;
+}
